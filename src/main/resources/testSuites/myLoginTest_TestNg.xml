@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+
+
+<!--     <listeners>
+        <listener class-name="com.myframwork.listener.ExtentTestNgFormatter" />
+    </listeners> -->
+    
+<listeners>
+    <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />
+</listeners>
+
+    <parameter name="system.info" value="com.myframework.tests.MySystemInfo" />
+    
+  <test name="Chrome Test1" enabled="true">
+    <classes>
+	  <parameter name="instance" value = "1" />
+      <parameter name="platformname" value="Windows" />
+      <parameter name="browsername" value="Chrome" />
+      <class name="com.myframework.tests.NxcWebTestsTestNg"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="IE Test2" enabled="false">
+    <classes>
+	  <parameter name="instance" value = "2" />
+      <parameter name="platformname" value="Windows" />
+      <parameter name="browsername" value="Chrome" />
+      <class name="com.myframework.tests.NxcWebTestsTestNg"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

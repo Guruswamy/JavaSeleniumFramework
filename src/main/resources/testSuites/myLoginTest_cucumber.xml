@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+  <test name="Chrome Test1" enabled="true">
+    <classes>
+      <parameter name="platformname" value="Windows" />
+      <parameter name="browsername" value="Chrome" />
+      <class name="com.myframework.tests.NxcWebCucumberDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="IE Test2" enabled="true">
+    <classes>
+      <parameter name="platformname" value="Windows" />
+      <parameter name="browsername" value="Chrome" />
+      <class name="com.myframework.tests.NxcWebCucumberDemo"/>
+    </classes>
+  </test> 
+  
+  <test name="Android Test" enabled="true">
+    <classes>
+      <parameter name="platformname" value="Android" />
+      <parameter name="browsername" value="Chrome" />
+      <parameter name="port" value="4723" />
+      <parameter name="deviceName" value="25e5780d331c7ece" />
+      <class name="com.myframework.tests.NxcWebCucumberDemo"/>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->

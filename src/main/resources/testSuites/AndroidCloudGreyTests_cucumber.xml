@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests">
+  <test name="My Galaxy Device" enabled="true">
+    <classes>
+      <parameter name="platformname" value="Android"/>
+      <parameter name="browsername" value="Chrome"/>
+      <parameter name="port" value="4723"/>
+      <parameter name="deviceName" value="25e5780d331c7ece"/>
+      <parameter name="app" value="TheApp-v1.10.0.apk"/>
+      <parameter name="appPackage" value="io.cloudgrey.the_app"/>
+      <parameter name="appActivity" value="io.cloudgrey.the_app.MainActivity"/>
+      <class name="com.myframework.tests.AndroidCloudGreyCucumberDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
