@@ -4,3 +4,5 @@ target
 test-output
 .settings
 .classpath
+.DS_Store
+.project
